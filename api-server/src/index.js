@@ -35,6 +35,8 @@ app.use((req, res, next) => {
 app.use(errorHandler);
 
 
-app.listen(config.port, () => {
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
   console.log(`Server started ${config.host}:${config.port}`);
 });
