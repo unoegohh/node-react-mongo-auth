@@ -1,6 +1,6 @@
 import React from "react";
 import { Router, Switch, Route } from "react-router-dom";
-import { routes } from "./routes";
+import { routes } from "./routes.js";
 import { AuthRoute } from "./feature/Common/AuthRoute";
 import { Layout } from "./feature/Common/Layout";
 import { history } from "./helpers/history";
