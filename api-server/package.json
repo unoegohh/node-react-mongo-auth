@@ -24,10 +24,10 @@
   "dependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
-    "@babel/node": "^7.4.5",
     "ajv": "^6.10.0",
     "ajv-errors": "^1.0.1",
     "babel-plugin-import-directory": "^1.1.0",
@@ -45,6 +45,7 @@
     "mongoose": "^5.7.5",
     "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "randomatic": "^3.1.1",
     "winston": "^3.2.1"
   }

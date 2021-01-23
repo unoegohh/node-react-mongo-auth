@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import express from "express";
+import path from 'path';
 import bodyParser from "body-parser";
 import cors from "cors";
 import morgan from "morgan";
@@ -29,6 +30,10 @@ app.use((req, res, next) => {
 });
 
 app.use(errorHandler);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(`${__dirname  }/../client/build/index.html`))
+});
 
 app.listen(config.port, () => {
   console.log(`Server started ${config.host}:${config.port}`);
