@@ -7,7 +7,7 @@ const dev = {
 
 const prod = {
   LOGGER_ENABLE: false,
-  API_BASE_URL: "production/api/"
+  API_BASE_URL: "/api/"
 };
 
 const config = process.env.NODE_ENV === "production" ? prod : dev;
