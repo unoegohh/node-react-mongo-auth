@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "cd api-server/ && npm install && node src/index.js",
+    "build": "cd client/ && npm install && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
