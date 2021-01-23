@@ -14,6 +14,7 @@ const app = express();
 const morganFormat = config.isDev ? "dev" : "combined";
 app.use(morgan(morganFormat));
 
+app.use(express.static(path.join(__dirname, '/../../client/build')))
 console.log('config.mongoUri',config.mongoUri)
 mongoose
   .connect(config.mongoUri, { useNewUrlParser: true,  useUnifiedTopology: true })
