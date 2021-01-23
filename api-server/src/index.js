@@ -13,8 +13,9 @@ const app = express();
 const morganFormat = config.isDev ? "dev" : "combined";
 app.use(morgan(morganFormat));
 
+console.log('config.mongoUri',config.mongoUri)
 mongoose
-  .connect(config.mongoUri, { useNewUrlParser: true })
+  .connect(config.mongoUri, { useNewUrlParser: true,  useUnifiedTopology: true })
   .catch(err => console.log(err));
 
 app.use(bodyParser.urlencoded({ extended: true }));

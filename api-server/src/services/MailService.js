@@ -65,9 +65,9 @@ const send = async data => {
       data.from = config.mail.from;
     }
 
-    if (config.app.isDev) {
-      return saveEmailInFile(data);
-    }
+    // if (config.app.isDev) {
+    //   return saveEmailInFile(data);
+    // }
 
     return await mailgun.messages().send(data);
   } catch (err) {

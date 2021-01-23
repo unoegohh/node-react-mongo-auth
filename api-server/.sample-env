@@ -4,7 +4,7 @@ HOST='http://localhost'
 FRONTEND_HOST='http://localhost:3000'
 
 # mongo uri
-MONGO_URI='mongodb://mongo/test'
+MONGO_URI='url'
 
 # secrets for api token
 SECRET_TOKEN_ACCESS='secret'
@@ -19,6 +19,6 @@ EXPIRE_TOKEN_RESTORE_PASSWORD='5min'
 TOKEN_LIMIT_COUNT_DIVICE=5
 
 #mail options
-API_KEY_MAILGUN='test'
+API_KEY_MAILGUN='e438c741-0e3c0d84'
 DOMAIN_MAILGUN='test'
 FROM_DEFAULT_MAIL='Test <new-app@test.com>'

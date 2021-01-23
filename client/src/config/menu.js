@@ -5,6 +5,11 @@ export const menuList = [
     icon: "appstore-o"
   },
   {
+    label: "Exercises",
+    path: "/exercises",
+    icon: "hd-outlined"
+  },
+  {
     label: "Users",
     path: "/users",
     icon: "user"
