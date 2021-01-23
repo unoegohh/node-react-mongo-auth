@@ -25,15 +25,15 @@ app.use(cors());
 
 app.use("/api", ...routes);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(`${__dirname  }/../client/build/index.html`))
+});
 app.use((req, res, next) => {
   next(httpError(404));
 });
 
 app.use(errorHandler);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(`${__dirname  }/../client/build/index.html`))
-});
 
 app.listen(config.port, () => {
   console.log(`Server started ${config.host}:${config.port}`);
