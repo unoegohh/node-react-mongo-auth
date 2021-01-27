@@ -10,6 +10,11 @@ export const menuList = [
     icon: "hd-outlined"
   },
   {
+    label: "Тренировки",
+    path: "/workouts",
+    icon: "hd-outlined"
+  },
+  {
     label: "Users",
     path: "/users",
     icon: "user"

@@ -3,6 +3,7 @@ import { UsersContainer } from "./Users";
 import {ExercisesContainer} from "./Exercises/container";
 import {ExercisesAddContainer} from "./Exercises";
 import {ExercisesEditContainer} from "./Exercises/container/edit";
+import {WorkoutCreateContainer, WorkoutListContainer} from "./Workout";
 
 export const routes = [
   {
@@ -34,5 +35,17 @@ export const routes = [
     component: ExercisesEditContainer,
     isAuth: true,
     exact: true
-  }
+  },
+  {
+    path: "/workouts",
+    component: WorkoutListContainer,
+    isAuth: true,
+    exact: true
+  },
+  {
+    path: "/workouts/create",
+    component: WorkoutCreateContainer,
+    isAuth: true,
+    exact: true
+  },
 ];
